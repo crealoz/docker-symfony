@@ -32,7 +32,9 @@ RUN apk upgrade --update --no-cache \
         bcmath \
         soap \
         zip \
-        gd
+        gd \
+        intl \
+        exif
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
